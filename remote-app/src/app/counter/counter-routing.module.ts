@@ -6,11 +6,11 @@ import { AgeCounterComponent } from './age-counter/age-counter.component';
 
 const routes: Routes = [
   {
-    path: "", 
+    path: "", // localhost:4200/counter (this is the base path of module)
     component: CounterComponent, 
     children: [
-      {path: "number", component: NumberCounterComponent},
-      {path: "age", component: AgeCounterComponent}
+      {path: "number", component: NumberCounterComponent}, // localhost:4200/counter/number
+      {path: "age", component: AgeCounterComponent} // // localhost:4200/counter/age
     ]
   }
 ];
